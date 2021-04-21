@@ -35,12 +35,15 @@
                             </div>
                         </div>
                         <div class="text-left">
+                            <!--
                             <a href="{% url 'social:begin' 'google-oauth2' %}?registration_flg=0" class="btn btn-primary mt-3 btn-block" id="google_login" >
                                 <i class="fa fa-google-plus-square"></i>
                                 <span>Googleアカウントでログイン</span>
                             </a>
+                        -->
                         </div>
-                        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                        <!-- Google Login-->
+                        <div class="g-id-signin" data-onsuccess="onSignIn"></div>
                     </form>
                 </div>
             </div>
@@ -49,10 +52,14 @@
                     <div>
                         <h2>新規ユーザー登録</h2>
                         <a href="{% url 'register:user_create' %}" class="btn btn-primary active btn-block mt-3" id="normal_register" >メールアドレスでユーザー登録</a>
+                        <!--
                         <a href="{% url 'social:begin' 'google-oauth2' %}?registration_flg=1" class="btn btn-primary active btn-block mt-3" id="google_register" >
                             <i class="fa fa-google-plus-square"></i>
                             <span>Googleアカウントで登録</span>
                         </a>
+                        -->
+                        <!-- Google Login-->
+                        <div class="g-id-signin" data-onsuccess="onSignIn"></div>
                     </div>
                 </div>
             </div>
